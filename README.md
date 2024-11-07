@@ -24,8 +24,8 @@ Este repositorio contiene la **Práctica 5** donde se utilizan técnicas de proc
 
 Este proyecto fue desarrollado por:
 
-- [![GitHub](https://img.shields.io/badge/GitHub-Francisco%20Javier%20L%C3%B3pez%E2%80%93Dufour%20Morales-red?style=flat-square&logo=github)](https://github.com/gitfrandu4)
-- [![GitHub](https://img.shields.io/badge/GitHub-Marcos%20V%C3%A1zquez%20Tasc%C3%B3n-grey?style=flat-square&logo=github)](https://github.com/DerKom)
+- [![GitHub](https://img.shields.io/badge/GitHub-Francisco%20Javier%20L%C3%B3pez%E2%80%93Dufour%20Morales-%23DC143C?style=flat-square&logo=github)](https://github.com/gitfrandu4)
+- [![GitHub](https://img.shields.io/badge/GitHub-Marcos%20V%C3%A1zquez%20Tasc%C3%B3n-%232C3E50?style=flat-square&logo=github)](https://github.com/DerKom)
 
 ## Referencias y bibliografía
 
