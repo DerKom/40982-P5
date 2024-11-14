@@ -54,6 +54,7 @@ Este repositorio contiene la **Práctica 5** donde se utilizan técnicas de proc
     - [Uso](#uso)
     - [Controles](#controles)
     - [Código Principal](#código-principal)
+    - [Resultado](#resultado-1)
   - [Referencias y bibliografía](#referencias-y-bibliografía)
 
 </details>
@@ -705,6 +706,15 @@ python fun_filter.py
        # Procesa el frame, aplica filtros y detecta emociones
        # Muestra FPS, número de caras y emoción dominante
    ```
+
+### Resultado
+<table>
+  <tr>
+    <td style="text-align: center; padding-right: 20px;">
+      <img src="videos/fun_filter_VC_P5_final_gif.gif" width="600" alt="GIF resultado de la izquierda">
+    </td>
+  </tr>
+</table>
 
 
 ## Referencias y bibliografía
