@@ -28,6 +28,18 @@ Este proyecto fue desarrollado por:
 
 ## Minijuego: Come Manzanas
 
+### Como se Juega
+
+1. **Inicia el juego** y asegúrate de estar en un entorno con buena iluminación.
+2. **Junta tus manos** frente a la cámara para empezar (palma con palma).
+3. Comenzaran a caer **Manzanas** y **Piedras** del cielo.
+4. Debes comer las **Manzanas** y evitar que estas caigan al suelo.
+5. NO deberías comer las **Piedras**.
+6. Puedes tocar las manzanas y las piedras con las manos, esto genera un efecto que las dirije hacia tu boca.
+6.1. Si la manzana se dirije a tu boca y NO la comes, pierdes una vida.
+6.2. Si la piedra se dirije a tu boca y la comes, pierdes una vida.
+9. Si pierdes todas las ** vidas (3)**, el juego termina.
+
 ### Explicación Del Código
 
 #### Importación de librerías y módulos necesarios
