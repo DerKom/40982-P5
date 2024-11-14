@@ -46,6 +46,7 @@ Este proyecto fue desarrollado por:
 
 
 ### Explicación Del Código
+> ⚠️ **Importante:** Además de las librerías que se utilizan en la **prática 5** debes instalar **mediapipe** (pip install mediapipe)
 
 #### Importación de librerías y módulos necesarios
 
