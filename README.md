@@ -72,9 +72,6 @@ Este proyecto fue desarrollado por:
 
 ## Minijuego: Come Manzanas
 
-### Resultado
-<aqui video del resultado>
-
 ### Como se Juega
 
 1. **Inicia el juego** y asegúrate de estar en un entorno con buena iluminación.
@@ -91,6 +88,14 @@ Este proyecto fue desarrollado por:
      - Si una piedra se dirige a tu boca y **la comes**, **pierdes una vida**.
 7. Tienes un total de **3 vidas**. Si las pierdes todas, el juego termina.
 
+### Resultado
+<table>
+  <tr>
+    <td style="text-align: center; padding-right: 20px;">
+      <img src="videos/minijuego_VC_P5_final_gif.gif" width="600" alt="GIF resultado de la izquierda">
+    </td>
+  </tr>
+</table>
 
 ### Explicación Del Código
 > ⚠️ **Importante:** Además de las librerías que se utilizan en la **prática 5** debes instalar **mediapipe** (pip install mediapipe)
