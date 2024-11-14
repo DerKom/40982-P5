@@ -4,9 +4,52 @@ Este repositorio contiene la **Práctica 5** donde se utilizan técnicas de proc
 
 ## Índice
 
-- [Práctica 5. Detección y caracterización de caras](#práctica-5-detección-y-caracterización-de-caras)
+<details>
+  <summary>Índice</summary>
 
-  - [Referencias y bibliografía](#referencias-y-bibliografía)
+  - [Práctica 5. Detección y caracterización de caras](#práctica-5-detección-y-caracterización-de-caras)
+    - [Librerías utilizadas](#librerías-utilizadas)
+    - [Autores](#autores)
+    - [Minijuego: Come Manzanas](#minijuego-come-manzanas)
+      - [Resultado](#resultado)
+      - [Como se Juega](#como-se-juega)
+      - [Explicación Del Código](#explicación-del-código)
+        - [Importación de librerías y módulos necesarios](#importación-de-librerías-y-módulos-necesarios)
+        - [Inicialización de Mediapipe para detección de manos y rostro](#inicialización-de-mediapipe-para-detección-de-manos-y-rostro)
+        - [Carga de imágenes de recursos (manzana, piedra y vida)](#carga-de-imágenes-de-recursos-manzana-piedra-y-vida)
+        - [Carga de la imagen de la boca gigante](#carga-de-la-imagen-de-la-boca-gigante)
+        - [Parámetros del juego](#parámetros-del-juego)
+        - [Configuración de la captura de video](#configuración-de-la-captura-de-video)
+        - [Función para superponer imágenes con transparencia](#función-para-superponer-imágenes-con-transparencia)
+        - [Clase GameObject](#clase-gameobject)
+          - [Métodos de GameObject](#métodos-de-gameobject)
+        - [Variables para el estado de la boca y la caja del rostro](#variables-para-el-estado-de-la-boca-y-la-caja-del-rostro)
+        - [Bucle principal del juego](#bucle-principal-del-juego)
+        - [Procesamiento del frame](#procesamiento-del-frame)
+        - [Procesamiento de detección de manos y rostro](#procesamiento-de-detección-de-manos-y-rostro)
+        - [Obtener dimensiones del frame](#obtener-dimensiones-del-frame)
+        - [Reiniciar variables](#reiniciar-variables)
+        - [Detección y procesamiento de manos](#detección-y-procesamiento-de-manos)
+        - [Detección y procesamiento del rostro y la boca](#detección-y-procesamiento-del-rostro-y-la-boca)
+          - [Cálculo de la apertura de la boca](#cálculo-de-la-apertura-de-la-boca)
+          - [Coordenadas de la boca](#coordenadas-de-la-boca)
+          - [Dibujar puntos de la boca](#dibujar-puntos-de-la-boca)
+          - [Calcular la caja delimitadora del rostro](#calcular-la-caja-delimitadora-del-rostro)
+          - [Almacenar la caja delimitadora actual](#almacenar-la-caja-delimitadora-actual)
+          - [Ajustar y superponer la boca gigante](#ajustar-y-superponer-la-boca-gigante)
+        - [Estado inicial del juego: esperando el gesto de inicio](#estado-inicial-del-juego-esperando-el-gesto-de-inicio)
+        - [Lógica principal del juego cuando está en marcha](#lógica-principal-del-juego-cuando-está-en-marcha)
+        - [Generación de nuevas manzanas y piedras](#generación-de-nuevas-manzanas-y-piedras)
+        - [Actualización y dibujo de manzanas](#actualización-y-dibujo-de-manzanas)
+        - [Manzanas dirigiéndose hacia la boca](#manzanas-dirigiéndose-hacia-la-boca)
+        - [Lógica similar para las piedras](#lógica-similar-para-las-piedras)
+        - [Dibujo de las vidas (corazones)](#dibujo-de-las-vidas-corazones)
+        - [Manejo del fin del juego](#manejo-del-fin-del-juego)
+        - [Mostrar el frame y manejar la entrada de teclado](#mostrar-el-frame-y-manejar-la-entrada-de-teclado)
+        - [Cierre de la aplicación](#cierre-de-la-aplicación)
+    - [Referencias y bibliografía](#referencias-y-bibliografía)
+
+</details>
 
 ## Librerías utilizadas
 
@@ -19,6 +62,7 @@ Este repositorio contiene la **Práctica 5** donde se utilizan técnicas de proc
 [![Dlib](https://img.shields.io/badge/Dlib-008080?style=for-the-badge&logo=python)](http://dlib.net/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Scikit-image](https://img.shields.io/badge/Scikit--image-5C3EE8?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-image.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-0A84FF?style=for-the-badge&logo=google&logoColor=white)](https://mediapipe.dev/)
 
 ## Autores
 Este proyecto fue desarrollado por:
@@ -27,6 +71,9 @@ Este proyecto fue desarrollado por:
 - [![GitHub](https://img.shields.io/badge/GitHub-Marcos%20V%C3%A1zquez%20Tasc%C3%B3n-%232C3E50?style=flat-square&logo=github)](https://github.com/DerKom)
 
 ## Minijuego: Come Manzanas
+
+### Resultado
+<aqui video del resultado>
 
 ### Como se Juega
 
@@ -579,3 +626,4 @@ cv2.destroyAllWindows()
 - Dlib Documentation: [dlib.net](http://dlib.net/)
 - Scikit-learn Documentation: [scikit-learn.org](https://scikit-learn.org/stable/documentation.html)
 - Scikit-image Documentation: [scikit-image.org](https://scikit-image.org/docs/stable/)
+- MediaPipe Documentation: [mediapipe.dev](https://mediapipe.dev/)
