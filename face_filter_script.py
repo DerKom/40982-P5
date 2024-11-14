@@ -30,6 +30,7 @@ detection_interval = 3  # Detect faces every 3 frames
 emotion_interval = 5  # Analyze emotions every 5 frames
 faces = None
 emotion_results = {}
+emotion = None
 
 # Flags to indicate which filters are active
 use_glasses = True
@@ -116,27 +117,27 @@ while True:
                 except Exception as e:
                     print(f"Emotion analysis failed: {e}")
                     emotion_results[face_id] = 'Unknown'
-            else:
-                emotion = emotion_results.get(face_id, 'Analyzing...')
+            # else:
+            #     emotion = emotion_results.get(face_id, 'Analyzing...')
 
-            if debug:
-                # Display the emotion label on the frame
-                cv2.putText(frame, f'Emotion: {emotion}', (x1, y1 - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+        if debug and emotion is not None:
+            # Display the emotion label on the frame
+            cv2.putText(frame, f'Emotion: {emotion}', (x1 - 20, y1 - 20),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
-                # Draw bounding rectangle
-                face_width = x2 - x1
-                face_height = y2 - y1
-                cv2.rectangle(frame, (x1, y1), (x2, y2),
-                              (255, 0, 0), 2)
-                cv2.putText(frame, f'Face: ({x1},{y1}) ({x2},{y2}) W:{face_width} H:{face_height}',
-                            (x1, y2 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 0, 0), 1)
+            # Draw bounding rectangle
+            face_width = x2 - x1
+            face_height = y2 - y1
+            cv2.rectangle(frame, (x1, y1), (x2, y2),
+                          (255, 0, 0), 2)
+            cv2.putText(frame, f'Face: ({x1},{y1}) ({x2},{y2}) W:{face_width} H:{face_height}',
+                        (x1, y2 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 0, 0), 1)
 
-                # Display landmarks with names and coordinates
-                for point_name, point in landmarks.items():
-                    x, y = int(point[0]), int(point[1])
-                    cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
-                    cv2.putText(frame, f'{point_name} ({x},{y})', (x + 5, y - 5),
+            # Display landmarks with names and coordinates
+            for point_name, point in landmarks.items():
+                x, y = int(point[0]), int(point[1])
+                cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
+                cv2.putText(frame, f'{point_name} ({x},{y})', (x + 5, y - 5),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 0), 1)
 
             # Calculate positions and sizes for filters
